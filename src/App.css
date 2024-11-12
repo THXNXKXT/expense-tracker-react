@@ -47,6 +47,7 @@ h4 {
   display: flex;
   justify-content: space-between;
   margin: 20px 0;
+  border-radius: 5px;
 }
 
 .inc-exp-container > div {
@@ -80,7 +81,7 @@ label {
 input[type='text'],
 input[type='number'] {
   border: 1px solid #dedede;
-  border-radius: 2px;
+  border-radius: 10px;
   display: block;
   font-size: 16px;
   padding: 10px;
@@ -98,6 +99,7 @@ input[type='number'] {
   margin: 10px 0 30px;
   padding: 10px;
   width: 100%;
+  border-radius: 5px;
 }
 
 .btn:focus,
@@ -120,6 +122,7 @@ input[type='number'] {
   position: relative;
   padding: 10px;
   margin: 10px 0;
+  border-radius: 5px;
 }
 
 .list li.plus {
@@ -154,4 +157,32 @@ input[type='number'] {
   .container {
     width: 300px;
   }
+}
+
+/* Language Switcher */
+.language-switcher {
+  display: flex;
+  justify-content: right;
+  gap: 5px;
+  margin-top: 20px;
+}
+
+.language-switcher button {
+  padding: 5px 10px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.language-switcher button:hover {
+  background-color: #0056b3;
+}
+
+.language-switcher button:focus {
+  outline: none;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
 }
